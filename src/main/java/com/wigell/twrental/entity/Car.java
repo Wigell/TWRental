@@ -11,8 +11,8 @@ public class Car {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "BRAND")
-    private String brand;
+    @Column(name = "NAME")
+    private String name;
 
     @Column(name = "MODEL")
     private String model;
@@ -24,9 +24,9 @@ public class Car {
 
     }
 
-    public Car(long id, String brand, String model, double price) {
+    public Car(long id, String name, String model, double price) {
         this.id = id;
-        this.brand = brand;
+        this.name = name;
         this.model = model;
         this.price = price;
     }
@@ -39,12 +39,12 @@ public class Car {
         this.id = id;
     }
 
-    public String getBrand() {
-        return brand;
+    public String getName() {
+        return name;
     }
 
-    public void setBrand(String brand) {
-        this.brand = brand;
+    public void setName(String brand) {
+        this.name = brand;
     }
 
     public String getModel() {

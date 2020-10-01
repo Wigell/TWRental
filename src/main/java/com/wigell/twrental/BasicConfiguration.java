@@ -33,7 +33,7 @@ public class BasicConfiguration extends WebSecurityConfigurerAdapter {
                 //För att H2-console inloggningsformuläret ska fungera
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/api/portal/**").permitAll()
+                .antMatchers("/api/v1/**").permitAll()
                 // Tillåter access till h2-console som ADMIN roll
                 .antMatchers("/h2-console/**").hasRole("ADMIN")
                 .anyRequest()
