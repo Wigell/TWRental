@@ -1,5 +1,6 @@
 package com.wigell.twrental.entity;
 
+
 import javax.persistence.*;
 
 @Entity
@@ -7,7 +8,7 @@ import javax.persistence.*;
 public class Customer {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy =GenerationType.IDENTITY)
     private long id;
 
     @Column(name = "NAME")

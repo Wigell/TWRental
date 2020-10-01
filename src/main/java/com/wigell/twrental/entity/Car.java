@@ -21,7 +21,6 @@ public class Car {
     private double price;
 
     public Car() {
-
     }
 
     public Car(long id, String name, String model, double price) {
@@ -43,8 +42,8 @@ public class Car {
         return name;
     }
 
-    public void setName(String brand) {
-        this.name = brand;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getModel() {
