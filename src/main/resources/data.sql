@@ -13,5 +13,9 @@ VALUES ('Tiger Persson', 'Hermelinvägen 11, 86232 Kvissleby', '0701234567'),
        ('Tyra Banks', 'Hyllowood road 9, 55544, Hyllowood', '0707778899');
 
 
-INSERT INTO BOOKING (TBL_DATE)
-VALUES ('2020-12-12');
+INSERT INTO BOOKING (CUSTOMER_ID, CAR_ID, DATE)
+VALUES ('2', '3', '2020-12-12'),
+        ('1', '5', '2018-06-04'),
+        ('1', '4', '2020-10-11'),
+        ('3', '1', '2020-01-07'),
+        ('4', '1', '2020-04-02');

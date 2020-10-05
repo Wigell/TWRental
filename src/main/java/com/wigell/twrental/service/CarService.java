@@ -18,4 +18,7 @@ public class CarService {
     }
 
 
+    public Car addcar(Car car){
+        return carRepo.save(car);
+    }
 }

@@ -4,9 +4,7 @@ import com.wigell.twrental.entity.Car;
 import com.wigell.twrental.service.CarService;
 import com.wigell.twrental.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -20,5 +18,10 @@ public class CarController {
     @GetMapping("/cars")
     public List<Car> cars() {
         return carService.cars();
+    }
+
+    @PostMapping("/addcar")
+    public Car addCar(@RequestBody Car car){
+        return  carService.addcar(car);
     }
 }
