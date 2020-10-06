@@ -25,6 +25,9 @@ public class CarController {
         return  carService.addcar(car);
     }
 
-    @PutMapping("/updatecar/{id}")
-    public ResponseEntity<Car> updateCar(@RequestBody Car car, Long id) { return carService.updateCar(car); }
+    @PutMapping("/updatecar")
+    public ResponseEntity<Car> updateCar(@RequestBody Car car) { return carService.updateCar(car); }
+
+    @DeleteMapping("/deletecar")
+    public void deleteCar(@RequestBody Car car){ carService.deleteCar(car);}
 }

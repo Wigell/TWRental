@@ -3,6 +3,8 @@ package com.wigell.twrental.controller;
 
 import com.wigell.twrental.dao.BookingRepo;
 import com.wigell.twrental.entity.Booking;
+import com.wigell.twrental.entity.Car;
+import com.wigell.twrental.entity.Customer;
 import com.wigell.twrental.service.BookingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.rest.webmvc.ResourceNotFoundException;
@@ -26,21 +28,9 @@ public class BookingController {
         bookingService.orderCar(booking);
     }
 
-
     @GetMapping("/myorders")
-   public List<Booking> myOrders() {return bookingService.myOrders();
-    }
-        
+    public List<Booking> myOrders(@RequestBody Customer customer) {return bookingService.myOrders(); }
 
-    @PutMapping("/updateorder/{id}")
-    public ResponseEntity<Booking> updateOrder(@PathVariable(value = "id")Long id, @RequestBody Booking updatedBooking)
-    throws ResourceNotFoundException {
-
-        Booking booking = bookingRepo.findById(id).orElseThrow(()-> new ResourceNotFoundException("Booking not found for this id: " + id));
-        booking.setCustomer_id(updatedBooking.getCustomer_id());
-        booking.setCar_id(updatedBooking.getCar_id());
-        booking.setDate(updatedBooking.getDate());
-        final Booking newBooking = bookingRepo.save(booking);
-        return ResponseEntity.ok((newBooking));
-    }
+    @PutMapping("/updateorder")
+    public ResponseEntity<Booking> updateOrder(@RequestBody Booking updatedBooking) { return bookingService.updateOrder(updatedBooking);}
 }

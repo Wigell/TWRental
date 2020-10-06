@@ -5,6 +5,7 @@ import com.wigell.twrental.entity.Booking;
 import com.wigell.twrental.entity.Car;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.rest.webmvc.ResourceNotFoundException;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -27,17 +28,16 @@ public class CarService {
         return carRepo.save(car);
     }
 
-
-    public ResponseEntity<Car> updateCar( Car updatedCar, long id) {
-            Car car = carRepo.findById(id);
-            car.setName(updatedCar.getName());
-            car.setModel(updatedCar.getModel());
-            car.setPrice(updatedCar.getPrice());
-            final Car newCar = carRepo.save(car);
-            return ResponseEntity.ok((newCar));
-
+    public ResponseEntity<Car> updateCar( Car updatedCar) {
+        Car car = carRepo.findById(updatedCar.getId());
+        car.setName(updatedCar.getName());
+        car.setModel(updatedCar.getModel());
+        car.setPrice(updatedCar.getPrice());
+        final Car newCar = carRepo.save(car);
+        return ResponseEntity.ok((newCar));
     }
 
-
-
+    public void deleteCar(Car car) {
+        carRepo.delete(car);
+     }
 }
