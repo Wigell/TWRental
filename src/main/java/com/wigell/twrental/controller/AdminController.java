@@ -21,15 +21,9 @@ public class AdminController {
     @Autowired
     private CarService carService;
 
-    @GetMapping("/customers")
-    public List<Customer>customers() {
-        return customerService.customers();
-    }
 
-    @GetMapping("/addcar")
-    public String addCar() {
-        return "Lägg till bil";
-    }
+
+
 
     @GetMapping("/deletecar")
     public String deleteCar() {

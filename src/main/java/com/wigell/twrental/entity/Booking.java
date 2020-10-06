@@ -1,6 +1,7 @@
 package com.wigell.twrental.entity;
 
 
+import com.wigell.twrental.service.CarService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.*;
@@ -26,12 +27,11 @@ public class Booking {
     public Booking() {
     }
 
-    public Booking(long id, Date date, long customer_id, long car_id) {
-        this.id = id;
+    public Booking(Date date, long customer_id, long car_id) {
         this.date = date;
         this.customer_id = customer_id;
         this.car_id = car_id;
-    }
+       }
 
     public long getId() {
         return id;

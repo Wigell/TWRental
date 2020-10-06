@@ -1,8 +1,8 @@
-INSERT INTO CAR (NAME, MODEL, PRICE)
-VALUES ('Peugeot', '308', 990),
-       ('Volkswagen', 'Golf VII', 1290),
-       ('Renault', 'Laguna', 1290),
-       ('Corvette', 'C8', 4999);
+INSERT INTO CAR (NAME, MODEL, PRICE, BOOKED)
+VALUES ('Peugeot', '308', 990, 0),
+       ('Volkswagen', 'Golf VII', 1290, 1),
+       ('Renault', 'Laguna', 1290, 1),
+       ('Corvette', 'C8', 4999, 0);
 
 
 INSERT INTO CUSTOMER (NAME, ADDRESS, PHONE)

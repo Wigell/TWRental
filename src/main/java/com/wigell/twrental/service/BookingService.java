@@ -1,7 +1,9 @@
 package com.wigell.twrental.service;
 
 import com.wigell.twrental.dao.BookingRepo;
+import com.wigell.twrental.dao.CarRepo;
 import com.wigell.twrental.entity.Booking;
+import com.wigell.twrental.entity.Car;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
@@ -18,12 +20,16 @@ public class BookingService {
     @Autowired
     private BookingRepo bookingRepo;
 
+    @Autowired
+    private CarRepo carRepo;
+
     public List<Booking> cars() {
         return bookingRepo.findAll();
     }
 
-    public void orderCar(Booking booking) {
-        bookingRepo.save(booking);
+    public Booking orderCar(Booking booking) {
+
+        return bookingRepo.save(booking);
     }
 
 

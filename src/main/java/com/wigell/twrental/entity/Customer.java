@@ -22,11 +22,6 @@ public class Customer {
     @Column(name = "PHONE")
     private String phone;
 
-    @JsonManagedReference
-    @ManyToOne(cascade = CascadeType.ALL )
-    @JoinColumn(name="car_id")
-    private Car car;
-
     public Customer() {
     }
 

@@ -2,6 +2,8 @@ package com.wigell.twrental.entity;
 
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "CAR")
@@ -20,14 +22,18 @@ public class Car {
     @Column(name = "PRICE")
     private double price;
 
+    @Column(name = "BOOKED")
+    private int booked;
+
     public Car() {
     }
 
-    public Car(long id, String name, String model, double price) {
-        this.id = id;
+    public Car(String name, String model, double price, int booked) {
         this.name = name;
         this.model = model;
         this.price = price;
+        this.booked = booked;
+
     }
 
     public long getId() {
@@ -60,5 +66,13 @@ public class Car {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public int getBooked() {
+        return booked;
+    }
+
+    public void setBooked(int booked) {
+        this.booked = booked;
     }
 }
