@@ -8,6 +8,8 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import static org.hibernate.criterion.Restrictions.and;
+
 @Configuration
 @EnableWebSecurity
 public class BasicConfiguration extends WebSecurityConfigurerAdapter {
@@ -33,13 +35,20 @@ public class BasicConfiguration extends WebSecurityConfigurerAdapter {
                 //För att H2-console inloggningsformuläret ska fungera
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/api/v1/**").hasRole("ADMIN")
+
                 // Tillåter access till h2-console som ADMIN roll
                 .antMatchers("/h2-console/**").hasRole("ADMIN")
+                .antMatchers("/api/v1/cars").hasAnyRole("USER", "ADMIN")
+                .antMatchers("/api/v1/ordercar").hasAnyRole("USER", "ADMIN")
+                .antMatchers("/api/v1/updateorder").hasAnyRole("USER", "ADMIN")
+                .antMatchers("/api/v1/myorders").hasAnyRole("USER", "ADMIN")
+                .antMatchers("/api/v1/**").hasRole("ADMIN")
                 .anyRequest()
                 .authenticated()
                 .and()
                 .httpBasic();
+
+
         //Används för att avaktivera X-Frame-Options. Kan köra utan det om vi tänker oss H2 databasen som ren utvecklingsdatabas.
         http.headers().frameOptions().disable();
     }
