@@ -1,8 +1,5 @@
 package com.wigell.twrental.entity;
 
-
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-
 import javax.persistence.*;
 
 @Entity

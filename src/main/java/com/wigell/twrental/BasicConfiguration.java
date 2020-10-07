@@ -19,7 +19,7 @@ public class BasicConfiguration extends WebSecurityConfigurerAdapter {
         auth
                 .inMemoryAuthentication()
                 .withUser("user")
-                .password(encoder.encode("password"))
+                .password(encoder.encode("user"))
                 .roles("USER")
                 .and()
                 .withUser("admin")
@@ -33,7 +33,7 @@ public class BasicConfiguration extends WebSecurityConfigurerAdapter {
                 //För att H2-console inloggningsformuläret ska fungera
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/api/v1/**").permitAll()
+                .antMatchers("/api/v1/**").hasRole("ADMIN")
                 // Tillåter access till h2-console som ADMIN roll
                 .antMatchers("/h2-console/**").hasRole("ADMIN")
                 .anyRequest()
