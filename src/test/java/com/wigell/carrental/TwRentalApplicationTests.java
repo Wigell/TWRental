@@ -1,4 +1,4 @@
-package com.wigell.twrental;
+package com.wigell.carrental;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,13 +1,13 @@
-package com.wigell.twrental;
+package com.wigell.carrental;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TwRentalApplication {
+public class CarRentalApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TwRentalApplication.class, args);
+        SpringApplication.run(CarRentalApplication.class, args);
     }
 
 }

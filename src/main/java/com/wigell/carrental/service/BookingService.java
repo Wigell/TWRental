@@ -1,7 +1,7 @@
-package com.wigell.twrental.service;
+package com.wigell.carrental.service;
 
-import com.wigell.twrental.dao.BookingRepo;
-import com.wigell.twrental.entity.Booking;
+import com.wigell.carrental.dao.BookingRepo;
+import com.wigell.carrental.entity.Booking;
 import org.hibernate.annotations.common.util.impl.LoggerFactory;
 import org.jboss.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

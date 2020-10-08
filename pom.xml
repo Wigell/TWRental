@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.wigell</groupId>
-    <artifactId>twrental</artifactId>
+    <artifactId>carrental</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>TWRental</name>
+    <name>CarRental</name>
     <description>Uppgift2 - REST API med Spring Boot</description>
 
     <properties>

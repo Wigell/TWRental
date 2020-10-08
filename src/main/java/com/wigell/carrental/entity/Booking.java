@@ -1,4 +1,4 @@
-package com.wigell.twrental.entity;
+package com.wigell.carrental.entity;
 
 import javax.persistence.*;
 import java.sql.Date;

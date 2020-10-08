@@ -1,6 +1,6 @@
-package com.wigell.twrental.dao;
+package com.wigell.carrental.dao;
 
-import com.wigell.twrental.entity.Customer;
+import com.wigell.carrental.entity.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

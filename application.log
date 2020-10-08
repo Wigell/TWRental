@@ -492,3 +492,70 @@ Caused by: java.lang.IllegalArgumentException: Value must only contain valid cha
 2020-10-08 13:12:52.820  INFO 1800 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-10-08 13:12:52.821  INFO 1800 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-10-08 13:12:52.874  INFO 1800 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 53 ms
+2020-10-08 18:40:52.749  INFO 12344 --- [main] com.wigell.twrental.TwRentalApplication  : Starting TwRentalApplication on LAPTOP-BMAITPVV with PID 12344 (C:\javaee\TWRental\target\classes started by tomas in C:\javaee\TWRental)
+2020-10-08 18:40:52.756  INFO 12344 --- [main] com.wigell.twrental.TwRentalApplication  : No active profile set, falling back to default profiles: default
+2020-10-08 18:40:54.876  INFO 12344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-08 18:40:54.996  INFO 12344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103ms. Found 3 JPA repository interfaces.
+2020-10-08 18:40:55.504  INFO 12344 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$a2e46ba1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-08 18:40:55.613  INFO 12344 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-10-08 18:40:56.153  INFO 12344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-10-08 18:40:56.166  INFO 12344 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-08 18:40:56.167  INFO 12344 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-08 18:40:56.406  INFO 12344 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-08 18:40:56.407  INFO 12344 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3530 ms
+2020-10-08 18:40:56.776  INFO 12344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-08 18:40:56.905  INFO 12344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-08 18:40:56.914  INFO 12344 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rental'
+2020-10-08 18:40:57.410  INFO 12344 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-08 18:40:57.504  INFO 12344 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-08 18:40:57.575  WARN 12344 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-08 18:40:57.625  INFO 12344 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-08 18:40:58.019  INFO 12344 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-08 18:40:58.238  INFO 12344 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-10-08 18:40:59.574  INFO 12344 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-08 18:40:59.597  INFO 12344 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-08 18:41:00.839  INFO 12344 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@186d8a71, org.springframework.security.web.context.SecurityContextPersistenceFilter@4e3f2908, org.springframework.security.web.header.HeaderWriterFilter@64aeaf29, org.springframework.security.web.authentication.logout.LogoutFilter@3a7b2e2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@483f286e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e3b0369, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67e0ff3a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3dc40ab9, org.springframework.security.web.session.SessionManagementFilter@3730f716, org.springframework.security.web.access.ExceptionTranslationFilter@32091c14, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e593b08]
+2020-10-08 18:41:02.085  INFO 12344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-10-08 18:41:02.203  INFO 12344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2020-10-08 18:41:02.204  INFO 12344 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-08 18:41:02.205  INFO 12344 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-08 18:41:02.252  INFO 12344 --- [main] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-10-08 18:41:02.253  INFO 12344 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 162 ms
+2020-10-08 18:41:02.268  INFO 12344 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-10-08 18:41:02.338  INFO 12344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2020-10-08 18:41:02.341  INFO 12344 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-08 18:41:02.607  INFO 12344 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-08 18:41:02.612  INFO 12344 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-08 18:41:02.612  INFO 12344 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-08 18:41:02.626  INFO 12344 --- [main] com.wigell.twrental.TwRentalApplication  : Started TwRentalApplication in 10.873 seconds (JVM running for 13.186)
+2020-10-08 18:43:39.320  INFO 4692 --- [main] c.wigell.carrental.CarRentalApplication  : Starting CarRentalApplication on LAPTOP-BMAITPVV with PID 4692 (C:\javaee\TWRental\target\classes started by tomas in C:\javaee\TWRental)
+2020-10-08 18:43:39.327  INFO 4692 --- [main] c.wigell.carrental.CarRentalApplication  : No active profile set, falling back to default profiles: default
+2020-10-08 18:43:41.626  INFO 4692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-08 18:43:41.737  INFO 4692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97ms. Found 3 JPA repository interfaces.
+2020-10-08 18:43:42.185  INFO 4692 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$238762d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-08 18:43:42.256  INFO 4692 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-10-08 18:43:42.770  INFO 4692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-10-08 18:43:42.785  INFO 4692 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-08 18:43:42.785  INFO 4692 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-08 18:43:42.986  INFO 4692 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-08 18:43:42.987  INFO 4692 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3523 ms
+2020-10-08 18:43:43.328  INFO 4692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-08 18:43:43.439  INFO 4692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-08 18:43:43.447  INFO 4692 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rental'
+2020-10-08 18:43:43.927  INFO 4692 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-08 18:43:44.030  INFO 4692 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-08 18:43:44.113  INFO 4692 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-08 18:43:44.118  WARN 4692 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-08 18:43:44.387  INFO 4692 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-08 18:43:44.593  INFO 4692 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-10-08 18:43:45.529  INFO 4692 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-08 18:43:45.541  INFO 4692 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-08 18:43:47.021  INFO 4692 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68ef01a5, org.springframework.security.web.context.SecurityContextPersistenceFilter@7730ef88, org.springframework.security.web.header.HeaderWriterFilter@7c40ffef, org.springframework.security.web.authentication.logout.LogoutFilter@7d8cf9ac, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1fecfaea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e3f2908, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@17207f5b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59a2388e, org.springframework.security.web.session.SessionManagementFilter@64bebd55, org.springframework.security.web.access.ExceptionTranslationFilter@47b269c4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d13960e]
+2020-10-08 18:43:48.221  INFO 4692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-10-08 18:43:48.352  INFO 4692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2020-10-08 18:43:48.354  INFO 4692 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-08 18:43:48.355  INFO 4692 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-08 18:43:48.404  INFO 4692 --- [main] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-10-08 18:43:48.405  INFO 4692 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 178 ms
+2020-10-08 18:43:48.421  INFO 4692 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-10-08 18:43:48.486  INFO 4692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''

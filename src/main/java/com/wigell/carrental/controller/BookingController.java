@@ -1,8 +1,7 @@
-package com.wigell.twrental.controller;
+package com.wigell.carrental.controller;
 
-import com.wigell.twrental.dao.BookingRepo;
-import com.wigell.twrental.entity.Booking;
-import com.wigell.twrental.service.BookingService;
+import com.wigell.carrental.entity.Booking;
+import com.wigell.carrental.service.BookingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,7 +1,7 @@
-package com.wigell.twrental.controller;
+package com.wigell.carrental.controller;
 
-import com.wigell.twrental.entity.Customer;
-import com.wigell.twrental.service.CustomerService;
+import com.wigell.carrental.entity.Customer;
+import com.wigell.carrental.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;

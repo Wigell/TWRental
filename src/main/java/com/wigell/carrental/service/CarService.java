@@ -1,7 +1,7 @@
-package com.wigell.twrental.service;
+package com.wigell.carrental.service;
 
-import com.wigell.twrental.dao.CarRepo;
-import com.wigell.twrental.entity.Car;
+import com.wigell.carrental.dao.CarRepo;
+import com.wigell.carrental.entity.Car;
 import org.hibernate.annotations.common.util.impl.LoggerFactory;
 import org.jboss.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
